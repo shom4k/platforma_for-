@@ -103,6 +103,11 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  const relativePath = cleanedUrl === '/' ? 'index.html' : cleanedUrl.replace(/^\/+/, '');
+  const safePath = path
+    .normalize(relativePath)
+    .replace(/^((\.\.(?:[\/\\]|$))+)/, '');
+  const filePath = path.resolve(ROOT_DIR, safePath);
   const relativePath = cleanedUrl === '/' ? '/index.html' : cleanedUrl;
   const safePath = path.normalize(relativePath).replace(/^\.\.(\/|\\|$)/, '');
   const filePath = path.join(ROOT_DIR, safePath);
