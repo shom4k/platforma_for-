@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Платформа для талантов — главный лендинг</title>
+    <meta
+      name="description"
+      content="Платформа для талантов объединяет авторов, экспертов и инвесторов. Узнайте, как всё устроено, познакомьтесь с ролями и выберите подходящий тариф."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              indigo: {
+                25: "#f7f7ff"
+              }
+            },
+            boxShadow: {
+              tariff: "0 25px 60px -35px rgba(45, 45, 100, 0.55)",
+              tariffHover: "0 30px 70px -30px rgba(45, 45, 120, 0.6)",
+              pill: "0 12px 40px -20px rgba(79, 70, 229, 0.35)",
+              card: "0 25px 60px -30px rgba(30, 41, 59, 0.18)"
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"]
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-slate-950 antialiased text-slate-900">
+    <div class="relative isolate overflow-hidden bg-gradient-to-br from-indigo-25 via-white to-indigo-100">
+      <div class="pointer-events-none absolute -top-24 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-indigo-400/30 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute bottom-0 right-0 h-80 w-80 translate-x-1/3 translate-y-1/3 rounded-full bg-indigo-500/20 blur-3xl" aria-hidden="true"></div>
+
+      <header class="relative px-6 pb-20 pt-8 sm:px-12 lg:px-24">
+        <div class="mx-auto flex max-w-6xl flex-col gap-12">
+          <nav
+            id="site-nav"
+            class="flex flex-wrap items-center justify-between gap-4 rounded-full border border-white/70 bg-white/80 px-6 py-4 text-sm text-slate-600 shadow-lg shadow-indigo-200/40 backdrop-blur"
+          >
+            <a href="/" class="text-lg font-semibold text-slate-900">Платформа для талантов</a>
+            <div class="hidden items-center gap-6 md:flex">
+              <a class="transition-colors hover:text-indigo-600" href="#how">Как это работает</a>
+              <a class="transition-colors hover:text-indigo-600" href="#audience">Для кого</a>
+              <a class="transition-colors hover:text-indigo-600" href="#roles">Роли</a>
+              <a class="transition-colors hover:text-indigo-600" href="#pricing">Тарифы</a>
+              <a class="transition-colors hover:text-indigo-600" href="#tracks">Треки и брифы</a>
+              <a class="transition-colors hover:text-indigo-600" href="#showcase">Витрина</a>
+              <a class="transition-colors hover:text-indigo-600" href="#faq">FAQ</a>
+              <a class="transition-colors hover:text-indigo-600" href="#documents">Документы</a>
+              <a class="transition-colors hover:text-indigo-600" href="/pages/sections.html">Страницы</a>
+            </div>
+            <a
+              href="#pricing"
+              class="inline-flex items-center justify-center rounded-full bg-indigo-600 px-4 py-2 font-semibold text-white shadow-pill transition-colors hover:bg-indigo-500"
+            >
+              Выбрать тариф
+            </a>
+          </nav>
+
+          <section id="hero" class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+            <div class="space-y-8">
+              <div class="inline-flex items-center gap-2 rounded-full bg-indigo-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600 shadow-sm">
+                Сезон 2024 · старт регистрации открыт
+              </div>
+              <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+                Объединяем артистов, предпринимателей и инвесторов, чтобы запускать лучшие проекты
+              </h1>
+              <p class="max-w-xl text-lg text-slate-600">
+                Подайте заявку как автор, поддержите таланты в составе сообщества или присоединитесь к экспертному совету. Платформа создаёт живое пространство для коллабораций, наставничества и роста.
+              </p>
+              <div class="flex flex-col gap-4 sm:flex-row">
+                <a
+                  href="#pricing"
+                  class="inline-flex items-center justify-center rounded-2xl bg-indigo-600 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-indigo-500/20 transition-colors hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Присоединиться сейчас
+                </a>
+                <a
+                  href="#showcase"
+                  class="inline-flex items-center justify-center rounded-2xl border border-indigo-200 bg-white px-6 py-3 text-base font-semibold text-indigo-600 transition-colors hover:border-indigo-300 hover:text-indigo-700"
+                >
+                  Посмотреть проекты
+                </a>
+              </div>
+              <p class="max-w-xl text-sm text-slate-500">
+                Нужно открыть каждый раздел отдельно? Перейдите к списку страниц и выберите нужный блок лендинга:
+                <a class="font-semibold text-indigo-600 hover:text-indigo-500" href="/pages/sections.html">все страницы →</a>
+              </p>
+              <dl class="grid gap-4 sm:grid-cols-3">
+                <div class="rounded-2xl border border-white/80 bg-white/90 p-4 text-sm text-slate-600 shadow-card">
+                  <dt class="text-xs font-medium uppercase tracking-wide text-slate-500">Участников сезона</dt>
+                  <dd class="mt-1 text-2xl font-semibold text-slate-900">1 200+</dd>
+                </div>
+                <div class="rounded-2xl border border-white/80 bg-white/90 p-4 text-sm text-slate-600 shadow-card">
+                  <dt class="text-xs font-medium uppercase tracking-wide text-slate-500">Выпущенных проектов</dt>
+                  <dd class="mt-1 text-2xl font-semibold text-slate-900">340</dd>
+                </div>
+                <div class="rounded-2xl border border-white/80 bg-white/90 p-4 text-sm text-slate-600 shadow-card">
+                  <dt class="text-xs font-medium uppercase tracking-wide text-slate-500">Партнёров и менторов</dt>
+                  <dd class="mt-1 text-2xl font-semibold text-slate-900">75</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="rounded-3xl border border-white/70 bg-white/90 p-8 text-sm text-slate-600 shadow-card backdrop-blur">
+              <h2 class="text-lg font-semibold text-slate-900">Как посмотреть страницу локально?</h2>
+              <ol class="mt-4 list-decimal space-y-2 pl-5">
+                <li>Скопируйте файл <code class="rounded bg-slate-900/80 px-1.5 py-0.5 font-mono text-xs text-white">.env.example</code> в <code class="rounded bg-slate-900/80 px-1.5 py-0.5 font-mono text-xs text-white">.env</code>.</li>
+                <li>Выполните <code class="rounded bg-slate-900/80 px-1.5 py-0.5 font-mono text-xs text-white">npm install</code> и затем <code class="rounded bg-slate-900/80 px-1.5 py-0.5 font-mono text-xs text-white">npm run dev</code>.</li>
+                <li>Откройте <span class="font-medium text-slate-900">http://localhost:3000</span> в браузере.</li>
+              </ol>
+              <p class="mt-4 rounded-2xl bg-indigo-50/80 p-4 text-xs text-slate-500">
+                Mock-API платежей доступен по маршрутам <code class="font-mono text-indigo-600">/api/payments/config</code> и <code class="font-mono text-indigo-600">/api/payments/session</code>.
+              </p>
+            </div>
+          </section>
+        </div>
+      </header>
+
+      <main class="relative z-10 space-y-28 px-6 pb-24 sm:px-12 lg:px-24">
+        <section id="how" class="mx-auto max-w-6xl">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="inline-flex items-center justify-center rounded-full bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600 shadow-sm">Как это работает</span>
+            <h2 class="mt-4 text-3xl font-semibold text-slate-900">Четыре шага от идеи до запуска проекта</h2>
+            <p class="mt-3 text-lg text-slate-600">
+              Мы ведём авторов и сообщества от подачи заявки до масштабирования проектов. Все шаги прозрачны и сопровождаются поддержкой кураторов.
+            </p>
+          </div>
+          <div class="mt-12 grid gap-6 lg:grid-cols-4">
+            <article class="flex h-full flex-col rounded-2xl border border-white/70 bg-white/90 p-6 text-sm text-slate-600 shadow-card">
+              <span class="flex h-12 w-12 items-center justify-center rounded-full bg-indigo-100 text-lg font-semibold text-indigo-600">1</span>
+              <h3 class="mt-5 text-lg font-semibold text-slate-900">Подача заявки</h3>
+              <p class="mt-3">Опишите проект, выберите направление и приложите материалы. Мы проверим и поможем доработать презентацию.</p>
+            </article>
+            <article class="flex h-full flex-col rounded-2xl border border-white/70 bg-white/90 p-6 text-sm text-slate-600 shadow-card">
+              <span class="flex h-12 w-12 items-center justify-center rounded-full bg-indigo-100 text-lg font-semibold text-indigo-600">2</span>
+              <h3 class="mt-5 text-lg font-semibold text-slate-900">Менторство и подготовка</h3>
+              <p class="mt-3">Кураторы проводят воркшопы, помогают собрать команду и готовят к защите перед экспертами.</p>
+            </article>
+            <article class="flex h-full flex-col rounded-2xl border border-white/70 bg-white/90 p-6 text-sm text-slate-600 shadow-card">
+              <span class="flex h-12 w-12 items-center justify-center rounded-full bg-indigo-100 text-lg font-semibold text-indigo-600">3</span>
+              <h3 class="mt-5 text-lg font-semibold text-slate-900">Голосование и витрина</h3>
+              <p class="mt-3">Проекты попадают в витрину, где за них голосуют сообщество, эксперты и инвесторы.</p>
+            </article>
+            <article class="flex h-full flex-col rounded-2xl border border-white/70 bg-white/90 p-6 text-sm text-slate-600 shadow-card">
+              <span class="flex h-12 w-12 items-center justify-center rounded-full bg-indigo-100 text-lg font-semibold text-indigo-600">4</span>
+              <h3 class="mt-5 text-lg font-semibold text-slate-900">Запуск и сопровождение</h3>
+              <p class="mt-3">Победители получают финансирование и сервисные призы, а команда помогает с запуском и PR.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="audience" class="mx-auto max-w-6xl">
+          <div class="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
+            <div class="space-y-6">
+              <span class="inline-flex items-center justify-center rounded-full bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600 shadow-sm">Для кого</span>
+              <h2 class="text-3xl font-semibold text-slate-900">Два направления, одно комьюнити</h2>
+              <p class="text-lg text-slate-600">
+                На платформе встречаются представители шоу-бизнеса и предприниматели. Мы создаём среду для синергии, где авторы могут найти поддержку, а эксперты — талантливых партнёров.
+              </p>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div class="flex h-full flex-col rounded-3xl border border-white/70 bg-white/90 p-6 shadow-card">
+                <h3 class="text-xl font-semibold text-slate-900">Шоу-бизнес</h3>
+                <p class="mt-3 text-sm text-slate-600">Музыканты, вокалисты, актёры и режиссёры, которые готовы представить свои проекты широкой аудитории.</p>
+                <ul class="mt-4 flex flex-col gap-2 text-sm text-slate-500">
+                  <li>• Запись треков и клипов</li>
+                  <li>• Постановки и шоу-программы</li>
+                  <li>• Подготовка к гастролям</li>
+                </ul>
+              </div>
+              <div class="flex h-full flex-col rounded-3xl border border-white/70 bg-white/90 p-6 shadow-card">
+                <h3 class="text-xl font-semibold text-slate-900">Бизнес</h3>
+                <p class="mt-3 text-sm text-slate-600">Стартапы и предприниматели, которые ищут партнёров, инвесторов и медийную поддержку для вывода продукта на рынок.</p>
+                <ul class="mt-4 flex flex-col gap-2 text-sm text-slate-500">
+                  <li>• IT-продукты и платформы</li>
+                  <li>• Оффлайн проекты и сервисы</li>
+                  <li>• Социальные инициативы</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="roles" class="mx-auto max-w-6xl">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="inline-flex items-center justify-center rounded-full bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600 shadow-sm">Роли</span>
+            <h2 class="mt-4 text-3xl font-semibold text-slate-900">Каждый участник знает свою роль и ценность</h2>
+            <p class="mt-3 text-lg text-slate-600">Платформа объединяет пять ключевых ролей. Мы помогли каждому типу пользователей найти свою точку входа.</p>
+          </div>
+          <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="flex h-full flex-col rounded-3xl border border-white/70 bg-white/90 p-6 text-sm text-slate-600 shadow-card">
+              <h3 class="text-xl font-semibold text-slate-900">Сообщество</h3>
+              <p class="mt-3">Голосует за проекты, участвует в обсуждениях и помогает талантам расти.</p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-500">
+                <li>• 3 голоса в каждой категории</li>
+                <li>• Доступ к закрытому чату</li>
+                <li>• Спецмероприятия и AMA-сессии</li>
+              </ul>
+            </article>
+            <article class="flex h-full flex-col rounded-3xl border border-white/70 bg-white/90 p-6 text-sm text-slate-600 shadow-card">
+              <h3 class="text-xl font-semibold text-slate-900">Автор</h3>
+              <p class="mt-3">Подаёт проекты, получает обратную связь и выводит идеи на сцену или рынок.</p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-500">
+                <li>• До двух проектов за сезон</li>
+                <li>• Наставники и рабочие группы</li>
+                <li>• Витрина и медийная поддержка</li>
+              </ul>
+            </article>
+            <article class="flex h-full flex-col rounded-3xl border border-white/70 bg-white/90 p-6 text-sm text-slate-600 shadow-card">
+              <h3 class="text-xl font-semibold text-slate-900">Эксперт</h3>
+              <p class="mt-3">Отбирает проекты, делится опытом и помогает сформировать шорт-лист победителей.</p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-500">
+                <li>• Настройка критериев оценки</li>
+                <li>• Регулярные созвоны с авторами</li>
+                <li>• Возможность стать наставником</li>
+              </ul>
+            </article>
+            <article class="flex h-full flex-col rounded-3xl border border-white/70 bg-white/90 p-6 text-sm text-slate-600 shadow-card">
+              <h3 class="text-xl font-semibold text-slate-900">Кандидат</h3>
+              <p class="mt-3">Присоединяется к командам проектов, чтобы реализовать себя и набраться опыта.</p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-500">
+                <li>• Обновляемые вакансии</li>
+                <li>• Профиль с портфолио</li>
+                <li>• Предложения от авторов</li>
+              </ul>
+            </article>
+            <article class="flex h-full flex-col rounded-3xl border border-white/70 bg-white/90 p-6 text-sm text-slate-600 shadow-card">
+              <h3 class="text-xl font-semibold text-slate-900">Инвестор</h3>
+              <p class="mt-3">Находит перспективные проекты, инвестирует и получает прозрачную отчётность.</p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-500">
+                <li>• Аналитика и метрики проектов</li>
+                <li>• Встречи с командами</li>
+                <li>• Личный кабинет для сделок</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="pricing" class="mx-auto max-w-6xl">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="inline-flex items-center justify-center rounded-full bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600 shadow-sm">Тарифы</span>
+            <h2 class="mt-4 text-3xl font-semibold text-slate-900">Выберите подходящий формат участия</h2>
+            <p class="mt-3 text-lg text-slate-600">Все кнопки ведут в единую воронку оплаты. После успешной оплаты вам откроется доступ к личному кабинету, событиям и закрытому сообществу.</p>
+          </div>
+          <div class="mt-16 grid gap-8 lg:grid-cols-2">
+            <article class="flex h-full flex-col rounded-3xl border border-slate-200/70 bg-white/90 px-8 py-10 shadow-tariff backdrop-blur transition-transform duration-300 hover:-translate-y-2 hover:shadow-tariffHover">
+              <header class="flex flex-col gap-2">
+                <span class="inline-flex w-fit items-center gap-2 rounded-full bg-indigo-50 px-4 py-1 text-sm font-medium text-indigo-600">Участник</span>
+                <div class="mt-4 text-4xl font-semibold text-slate-900">2 500 ₽</div>
+                <p class="mt-3 text-base text-slate-600">Подача проекта в сезон, участие в голосовании, доступ к материалам и обратной связи от кураторов.</p>
+              </header>
+              <ul class="mt-8 flex flex-col gap-3 text-sm text-slate-600">
+                <li class="flex items-start gap-3 rounded-2xl bg-indigo-50/40 px-4 py-3 text-left text-slate-700">
+                  <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-indigo-500 text-xs font-semibold text-white">✓</span>
+                  <span>1 проект в сезон</span>
+                </li>
+                <li class="flex items-start gap-3 rounded-2xl bg-indigo-50/40 px-4 py-3 text-left text-slate-700">
+                  <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-indigo-500 text-xs font-semibold text-white">✓</span>
+                  <span>Доступ к мастер-классам</span>
+                </li>
+                <li class="flex items-start gap-3 rounded-2xl bg-indigo-50/40 px-4 py-3 text-left text-slate-700">
+                  <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-indigo-500 text-xs font-semibold text-white">✓</span>
+                  <span>Персональная карточка в витрине</span>
+                </li>
+                <li class="flex items-start gap-3 rounded-2xl bg-indigo-50/40 px-4 py-3 text-left text-slate-700">
+                  <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-indigo-500 text-xs font-semibold text-white">✓</span>
+                  <span>Приглашение в закрытый чат участников</span>
+                </li>
+              </ul>
+              <div class="mt-8">
+                <button type="button" class="w-full rounded-2xl bg-indigo-600 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-indigo-500/20 transition-colors hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                  Стать участником
+                </button>
+              </div>
+            </article>
+
+            <article class="flex h-full flex-col rounded-3xl border border-slate-200/70 bg-white/90 px-8 py-10 shadow-tariff backdrop-blur transition-transform duration-300 hover:-translate-y-2 hover:shadow-tariffHover">
+              <header class="flex flex-col gap-2">
+                <span class="inline-flex w-fit items-center gap-2 rounded-full bg-indigo-50 px-4 py-1 text-sm font-medium text-indigo-600">Сообщество</span>
+                <div class="mt-4 text-4xl font-semibold text-slate-900">1 000 ₽ / мес</div>
+                <p class="mt-3 text-base text-slate-600">Подписка для тех, кто хочет следить за проектами, голосовать и поддерживать талантливых авторов.</p>
+              </header>
+              <ul class="mt-8 flex flex-col gap-3 text-sm text-slate-600">
+                <li class="flex items-start gap-3 rounded-2xl bg-indigo-50/40 px-4 py-3 text-left text-slate-700">
+                  <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-indigo-500 text-xs font-semibold text-white">✓</span>
+                  <span>Безлимитный доступ к витрине</span>
+                </li>
+                <li class="flex items-start gap-3 rounded-2xl bg-indigo-50/40 px-4 py-3 text-left text-slate-700">
+                  <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-indigo-500 text-xs font-semibold text-white">✓</span>
+                  <span>3 голоса в каждой категории</span>
+                </li>
+                <li class="flex items-start gap-3 rounded-2xl bg-indigo-50/40 px-4 py-3 text-left text-slate-700">
+                  <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-indigo-500 text-xs font-semibold text-white">✓</span>
+                  <span>Эксклюзивные AMA-сессии</span>
+                </li>
+                <li class="flex items-start gap-3 rounded-2xl bg-indigo-50/40 px-4 py-3 text-left text-slate-700">
+                  <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-indigo-500 text-xs font-semibold text-white">✓</span>
+                  <span>Доступ к закрытым материалам</span>
+                </li>
+              </ul>
+              <div class="mt-8">
+                <button type="button" class="w-full rounded-2xl bg-indigo-600 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-indigo-500/20 transition-colors hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                  Присоединиться к сообществу
+                </button>
+              </div>
+              <div class="mt-10 rounded-2xl border border-indigo-100/80 bg-indigo-50/70 p-6">
+                <h3 class="text-lg font-semibold text-slate-900">Что входит в тариф «Сообщество»</h3>
+                <p class="mt-2 text-sm text-slate-600">Пояснение тарифу с преимуществами и тем, как работает подписка.</p>
+                <dl class="mt-6 grid gap-4 sm:grid-cols-2">
+                  <div class="rounded-2xl border border-indigo-100/60 bg-white/80 px-5 py-4 shadow-sm shadow-indigo-200/40">
+                    <dt class="text-xs font-medium uppercase tracking-wide text-slate-500">Голосование</dt>
+                    <dd class="mt-1 text-base font-semibold text-slate-800">3 голоса в каждом направлении</dd>
+                  </div>
+                  <div class="rounded-2xl border border-indigo-100/60 bg-white/80 px-5 py-4 shadow-sm shadow-indigo-200/40">
+                    <dt class="text-xs font-medium uppercase tracking-wide text-slate-500">Коллаборации</dt>
+                    <dd class="mt-1 text-base font-semibold text-slate-800">Совместные проекты с участниками</dd>
+                  </div>
+                  <div class="rounded-2xl border border-indigo-100/60 bg-white/80 px-5 py-4 shadow-sm shadow-indigo-200/40">
+                    <dt class="text-xs font-medium uppercase tracking-wide text-slate-500">Нетворкинг</dt>
+                    <dd class="mt-1 text-base font-semibold text-slate-800">Закрытый Discord-сервер сообщества</dd>
+                  </div>
+                  <div class="rounded-2xl border border-indigo-100/60 bg-white/80 px-5 py-4 shadow-sm shadow-indigo-200/40">
+                    <dt class="text-xs font-medium uppercase tracking-wide text-slate-500">Поддержка</dt>
+                    <dd class="mt-1 text-base font-semibold text-slate-800">Еженедельные созвоны с командой платформы</dd>
+                  </div>
+                </dl>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="tracks" class="mx-auto max-w-6xl">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="inline-flex items-center justify-center rounded-full bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600 shadow-sm">Треки и брифы</span>
+            <h2 class="mt-4 text-3xl font-semibold text-slate-900">Сфокусируйтесь на том, что ближе всего вашим целям</h2>
+            <p class="mt-3 text-lg text-slate-600">Каждый трек сопровождается брифом и ожидаемыми результатами. Выберите направление и загрузите материалы сразу после регистрации.</p>
+          </div>
+          <div class="mt-12 grid gap-6 lg:grid-cols-3">
+            <article class="flex h-full flex-col rounded-3xl border border-white/70 bg-white/90 p-6 text-sm text-slate-600 shadow-card">
+              <h3 class="text-xl font-semibold text-slate-900">Музыка и сцена</h3>
+              <p class="mt-3">Создание авторских треков, постановка живых выступлений, продюсирование туров.</p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-500">
+                <li>• Бриф: демо, референсы, запрос на поддержку</li>
+                <li>• Наставники: продюсеры и саунд-дизайнеры</li>
+                <li>• Финал: живой шоукейс</li>
+              </ul>
+            </article>
+            <article class="flex h-full flex-col rounded-3xl border border-white/70 bg-white/90 p-6 text-sm text-slate-600 shadow-card">
+              <h3 class="text-xl font-semibold text-slate-900">Стартапы и технологии</h3>
+              <p class="mt-3">От MVP до первых клиентов. Помогаем упаковать продукт, протестировать гипотезы и выйти на инвестиции.</p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-500">
+                <li>• Бриф: описание продукта и GTM-план</li>
+                <li>• Наставники: продакт-менеджеры и венчурные партнёры</li>
+                <li>• Финал: питч-сессия</li>
+              </ul>
+            </article>
+            <article class="flex h-full flex-col rounded-3xl border border-white/70 bg-white/90 p-6 text-sm text-slate-600 shadow-card">
+              <h3 class="text-xl font-semibold text-slate-900">Социальные инициативы</h3>
+              <p class="mt-3">Проекты, которые меняют города и сообщества: образование, экология, инклюзия.</p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-500">
+                <li>• Бриф: эффект, целевая аудитория и партнёры</li>
+                <li>• Наставники: НКО и муниципальные эксперты</li>
+                <li>• Финал: презентация с кейсом воздействия</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="showcase" class="mx-auto max-w-6xl">
+          <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div class="space-y-6">
+              <span class="inline-flex items-center justify-center rounded-full bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600 shadow-sm">Витрина</span>
+              <h2 class="text-3xl font-semibold text-slate-900">Лучшие работы участников</h2>
+              <p class="text-lg text-slate-600">
+                Ознакомьтесь с проектами текущего и прошлых сезонов. Каждая карточка ведёт к подробной истории и прогрессу команды.
+              </p>
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-white/70 bg-white/90 p-4 text-sm text-slate-600 shadow-card">
+                  <h3 class="text-base font-semibold text-slate-900">Авторы</h3>
+                  <p class="mt-2">Витрина творческих и бизнес-проектов с фильтрами по категориям.</p>
+                  <a href="#" class="mt-3 inline-flex items-center text-sm font-semibold text-indigo-600 hover:text-indigo-500">Перейти →</a>
+                </div>
+                <div class="rounded-2xl border border-white/70 bg-white/90 p-4 text-sm text-slate-600 shadow-card">
+                  <h3 class="text-base font-semibold text-slate-900">Эксперты</h3>
+                  <p class="mt-2">Наставники и продюсеры, которые сопровождают команды на протяжении сезона.</p>
+                  <a href="#" class="mt-3 inline-flex items-center text-sm font-semibold text-indigo-600 hover:text-indigo-500">Перейти →</a>
+                </div>
+                <div class="rounded-2xl border border-white/70 bg-white/90 p-4 text-sm text-slate-600 shadow-card">
+                  <h3 class="text-base font-semibold text-slate-900">Кандидаты</h3>
+                  <p class="mt-2">Профессионалы, готовые присоединиться к проектам в ролях менеджеров, дизайнеров и т.д.</p>
+                  <a href="#" class="mt-3 inline-flex items-center text-sm font-semibold text-indigo-600 hover:text-indigo-500">Перейти →</a>
+                </div>
+                <div class="rounded-2xl border border-white/70 bg-white/90 p-4 text-sm text-slate-600 shadow-card">
+                  <h3 class="text-base font-semibold text-slate-900">Инвесторы</h3>
+                  <p class="mt-2">Партнёры, которые готовы поддержать проекты ресурсами и финансами.</p>
+                  <a href="#" class="mt-3 inline-flex items-center text-sm font-semibold text-indigo-600 hover:text-indigo-500">Перейти →</a>
+                </div>
+              </div>
+            </div>
+            <div class="relative overflow-hidden rounded-3xl border border-white/70 bg-white/90 shadow-card">
+              <div class="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 via-transparent to-indigo-200/30"></div>
+              <div class="relative flex flex-col gap-6 p-8 text-white">
+                <h3 class="text-2xl font-semibold">Витрина сезона</h3>
+                <div class="grid gap-4">
+                  <div class="rounded-2xl bg-slate-900/70 p-4">
+                    <p class="text-xs uppercase tracking-wide text-slate-300">Музыка</p>
+                    <h4 class="mt-1 text-lg font-semibold">«Голос улиц» — шоукейс молодых артистов</h4>
+                    <p class="mt-2 text-sm text-slate-300">Победители прошлогоднего сезона собрали зал на 2 500 человек.</p>
+                  </div>
+                  <div class="rounded-2xl bg-slate-900/70 p-4">
+                    <p class="text-xs uppercase tracking-wide text-slate-300">Стартапы</p>
+                    <h4 class="mt-1 text-lg font-semibold">AR-платформа для образовательных туров</h4>
+                    <p class="mt-2 text-sm text-slate-300">Привлекли 12 млн ₽ инвестиций и подписали контракт с музеями.</p>
+                  </div>
+                  <div class="rounded-2xl bg-slate-900/70 p-4">
+                    <p class="text-xs uppercase tracking-wide text-slate-300">Социальные проекты</p>
+                    <h4 class="mt-1 text-lg font-semibold">Городская мастерская инклюзивного дизайна</h4>
+                    <p class="mt-2 text-sm text-slate-300">Создали 15 доступных пространств по запросу жителей.</p>
+                  </div>
+                </div>
+                <a href="#" class="inline-flex w-fit items-center justify-center rounded-full bg-white/10 px-5 py-2 text-sm font-semibold text-white transition hover:bg-white/20">Открыть витрину</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="mx-auto max-w-6xl">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="inline-flex items-center justify-center rounded-full bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600 shadow-sm">FAQ</span>
+            <h2 class="mt-4 text-3xl font-semibold text-slate-900">Ответы на популярные вопросы</h2>
+            <p class="mt-3 text-lg text-slate-600">Собрали разъяснения по участию, оплате и взаимодействию с платформой.</p>
+          </div>
+          <div class="mt-12 space-y-4">
+            <details class="group rounded-3xl border border-white/70 bg-white/90 p-6 shadow-card">
+              <summary class="flex cursor-pointer items-center justify-between text-left text-lg font-semibold text-slate-900">
+                <span>Какие требования к заявке автора?</span>
+                <span class="ml-4 text-sm font-medium text-indigo-500 transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-4 text-sm text-slate-600">
+                Подготовьте короткое описание проекта, цели, материалы (трек, презентация или MVP), а также отметьте нужную поддержку. Все шаблоны и брифы доступны после регистрации.
+              </p>
+            </details>
+            <details class="group rounded-3xl border border-white/70 bg-white/90 p-6 shadow-card">
+              <summary class="flex cursor-pointer items-center justify-between text-left text-lg font-semibold text-slate-900">
+                <span>Можно ли оплатить тариф частями?</span>
+                <span class="ml-4 text-sm font-medium text-indigo-500 transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-4 text-sm text-slate-600">
+                Да, мы поддерживаем рассрочку через партнёрские сервисы. После оплаты первой части доступ открывается сразу, а дальнейшие платежи списываются автоматически каждый месяц.
+              </p>
+            </details>
+            <details class="group rounded-3xl border border-white/70 bg-white/90 p-6 shadow-card">
+              <summary class="flex cursor-pointer items-center justify-between text-left text-lg font-semibold text-slate-900">
+                <span>Что получает сообщество за подписку?</span>
+                <span class="ml-4 text-sm font-medium text-indigo-500 transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-4 text-sm text-slate-600">
+                Члены сообщества получают доступ ко всем событиям, голосованию, закрытым материалам и нетворкингу с авторами. Мы регулярно проводим AMA-сессии с экспертами и открытые питчи.
+              </p>
+            </details>
+            <details class="group rounded-3xl border border-white/70 bg-white/90 p-6 shadow-card">
+              <summary class="flex cursor-pointer items-center justify-between text-left text-lg font-semibold text-slate-900">
+                <span>Как связаться с командой поддержки?</span>
+                <span class="ml-4 text-sm font-medium text-indigo-500 transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-4 text-sm text-slate-600">
+                Напишите нам на <a class="font-semibold text-indigo-600" href="mailto:support@talents-platform.ru">support@talents-platform.ru</a> или в Telegram-чат <a class="font-semibold text-indigo-600" href="https://t.me/talents_platform" target="_blank" rel="noreferrer">@talents_platform</a>.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section id="documents" class="mx-auto max-w-6xl">
+          <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div class="space-y-6">
+              <span class="inline-flex items-center justify-center rounded-full bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600 shadow-sm">Документы</span>
+              <h2 class="text-3xl font-semibold text-slate-900">Все регламенты и материалы в одном месте</h2>
+              <p class="text-lg text-slate-600">
+                Ознакомьтесь с правилами сезона, списком призов и дорожными картами. Файлы доступны участникам и членам сообщества.
+              </p>
+              <p class="text-sm text-slate-500">
+                Скопируйте материалы в свою рабочую папку, чтобы подготовиться к подаче заявки и питчу.
+              </p>
+            </div>
+            <div class="grid gap-4">
+              <a href="#" class="flex items-center justify-between rounded-2xl border border-white/70 bg-white/90 px-5 py-4 text-sm text-slate-600 shadow-card transition hover:border-indigo-200">
+                <span>
+                  <span class="block text-base font-semibold text-slate-900">Описание сезона</span>
+                  <span class="text-xs text-slate-500">Документ с ключевыми датами и требованиями</span>
+                </span>
+                <span class="text-sm font-semibold text-indigo-600">Скачать</span>
+              </a>
+              <a href="#" class="flex items-center justify-between rounded-2xl border border-white/70 bg-white/90 px-5 py-4 text-sm text-slate-600 shadow-card transition hover:border-indigo-200">
+                <span>
+                  <span class="block text-base font-semibold text-slate-900">Роли и сущности</span>
+                  <span class="text-xs text-slate-500">Карточки взаимодействия команд и менторов</span>
+                </span>
+                <span class="text-sm font-semibold text-indigo-600">Скачать</span>
+              </a>
+              <a href="#" class="flex items-center justify-between rounded-2xl border border-white/70 bg-white/90 px-5 py-4 text-sm text-slate-600 shadow-card transition hover:border-indigo-200">
+                <span>
+                  <span class="block text-base font-semibold text-slate-900">Денежные и сервисные призы</span>
+                  <span class="text-xs text-slate-500">Актуальная таблица наград сезона</span>
+                </span>
+                <span class="text-sm font-semibold text-indigo-600">Скачать</span>
+              </a>
+              <a href="#" class="flex items-center justify-between rounded-2xl border border-white/70 bg-white/90 px-5 py-4 text-sm text-slate-600 shadow-card transition hover:border-indigo-200">
+                <span>
+                  <span class="block text-base font-semibold text-slate-900">Мастер-документ</span>
+                  <span class="text-xs text-slate-500">Регламенты, шаблоны договоров и чек-листы</span>
+                </span>
+                <span class="text-sm font-semibold text-indigo-600">Скачать</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="site-footer" class="relative px-6 pb-16 sm:px-12 lg:px-24">
+        <div class="mx-auto max-w-6xl rounded-3xl border border-white/60 bg-slate-900 px-8 py-10 text-sm text-slate-300 shadow-card">
+          <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <p class="text-base font-semibold text-white">Платформа для талантов</p>
+              <p class="mt-2 max-w-xl text-sm text-slate-400">
+                Мы объединяем талантливых людей и даём им ресурсы для запуска проектов. Подписывайтесь на рассылку и следите за обновлениями.
+              </p>
+            </div>
+            <div class="flex flex-col gap-3 text-sm text-slate-400">
+              <a class="transition hover:text-white" href="mailto:hello@talents-platform.ru">hello@talents-platform.ru</a>
+              <a class="transition hover:text-white" href="https://t.me/talents_platform" target="_blank" rel="noreferrer">t.me/talents_platform</a>
+              <span>© 2024. Все права защищены.</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

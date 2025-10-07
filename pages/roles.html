@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Роли — Платформа для талантов</title>
+    <meta
+      name="description"
+      content="Изучите роли на платформе: сообщество, авторы, эксперты, кандидаты и инвесторы."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              indigo: {
+                25: '#f7f7ff'
+              }
+            },
+            boxShadow: {
+              tariff: '0 25px 60px -35px rgba(45, 45, 100, 0.55)',
+              tariffHover: '0 30px 70px -30px rgba(45, 45, 120, 0.6)',
+              pill: '0 12px 40px -20px rgba(79, 70, 229, 0.35)',
+              card: '0 25px 60px -30px rgba(30, 41, 59, 0.18)'
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif']
+            }
+          }
+        }
+      };
+    </script>
+    <script type="module">
+      import { bootstrapPage } from '../assets/page-loader.js';
+
+      window.addEventListener('DOMContentLoaded', () => {
+        bootstrapPage({
+          sectionId: 'roles',
+          pageTitle: 'Роли — Платформа для талантов',
+          intro: 'Каждая роль отвечает за свой вклад в развитие проектов и успех сезона.'
+        });
+      });
+    </script>
+  </head>
+  <body class="bg-slate-950 antialiased text-slate-900">
+    <div class="relative isolate min-h-screen overflow-hidden bg-gradient-to-br from-indigo-25 via-white to-indigo-100">
+      <div class="pointer-events-none absolute -top-24 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-indigo-400/30 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute bottom-0 right-0 h-80 w-80 translate-x-1/3 translate-y-1/3 rounded-full bg-indigo-500/20 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative px-6 pb-24 pt-8 sm:px-12 lg:px-24">
+        <div id="nav-root" class="mx-auto max-w-6xl"></div>
+
+        <main class="mt-16">
+          <div class="mx-auto max-w-5xl text-center">
+            <span class="inline-flex items-center justify-center rounded-full bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600 shadow-sm">Раздел лендинга</span>
+            <h1 class="mt-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Роли на платформе</h1>
+            <p id="intro-root" class="mt-4 text-lg text-slate-600">
+              Каждая роль отвечает за свой вклад в развитие проектов и успех сезона.
+            </p>
+          </div>
+
+          <div id="section-root" class="mt-16"></div>
+
+          <div class="mx-auto mt-16 flex max-w-5xl flex-col items-center gap-4 rounded-3xl border border-white/70 bg-white/80 px-8 py-10 text-center shadow-card">
+            <h2 class="text-2xl font-semibold text-slate-900">Нужны детали по тарифам?</h2>
+            <p class="max-w-2xl text-sm text-slate-600">
+              На главной странице вы найдёте актуальные тарифы и примеры треков. Возвращайтесь к ним с помощью кнопки ниже.
+            </p>
+            <a
+              href="../index.html"
+              class="inline-flex items-center justify-center rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-pill transition hover:bg-indigo-500"
+            >
+              На главную
+            </a>
+          </div>
+        </main>
+      </div>
+
+      <div id="footer-root" class="relative mt-16 px-6 pb-16 sm:px-12 lg:px-24"></div>
+    </div>
+  </body>
+</html>
